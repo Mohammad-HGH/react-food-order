@@ -1,13 +1,14 @@
 import { Fragment } from "react"
 import mealsImage from "../../../assets/images/meals.jpg"
-import classes from './header.mosule.css'
+import classes from './Header.module.css'
+import HeaderCartButton from "./HeaderCartButton";
 
 const Header = ( props ) => {
   return (
     <Fragment>
-      <header>
-        <h1 className={ classes.header }>react food order</h1>
-        <button>cart</button>
+      <header className={ classes.header }>
+        <h1>react food order</h1>
+        <HeaderCartButton />
       </header>
       <div className={ classes[ 'main-image' ] }>
         <img src={ mealsImage } alt="a table full of food" />
