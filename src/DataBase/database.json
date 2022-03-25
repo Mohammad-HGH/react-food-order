@@ -1,0 +1,30 @@
+[
+    {
+        "id": "m1",
+        "foodID": 0,
+        "name": "Sushi",
+        "description": "First fish and veggies",
+        "price": 22.98
+    },
+    {
+        "id": "m2",
+        "foodID": 1,
+        "name": "Kebab",
+        "description": "Sheep backen",
+        "price": 22.98
+    },
+    {
+        "id": "m3",
+        "foodID": 2,
+        "name": "Bifstraganof",
+        "description": "First fish and veggies",
+        "price": 22.98
+    },
+    {
+        "id": "m4",
+        "foodID": 3,
+        "name": "Salad",
+        "description": "First fish and veggies",
+        "price": 22.98
+    }
+]
