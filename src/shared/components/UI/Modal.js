@@ -12,7 +12,7 @@ import classes from './Modal.module.css'
  */
 
 const Backdrop = props => {
-    return <div className={ classes.backdrop }></div>
+    return <div className={ classes.backdrop } onClick={ props.onClose } />
 }
 
 const ModalNotify = props => {
@@ -26,8 +26,8 @@ const portalElement = document.getElementById( 'notification' )
 const Modal = ( props ) => {
     return (
         <Fragment>
-            { ReactDOM.createPortal( <Backdrop />, portalElement ) }
-            { ReactDOM.createPortal( <ModalNotify>{ props.children }</ModalNotify> ,portalElement) }
+            { ReactDOM.createPortal( <Backdrop onClose={ props.onClose } />, portalElement ) }
+            { ReactDOM.createPortal( <ModalNotify>{ props.children }</ModalNotify>, portalElement ) }
         </Fragment>
     );
 };
