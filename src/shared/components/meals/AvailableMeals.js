@@ -5,10 +5,11 @@ import MealItem from './MealsItem/MealItem'
 
 
 const AvailableMeals = () => {
-    const mealsID = DUMMY_MEALS.map( ( meal ) => ( meal.foodID ) )
+
     const mealsList = DUMMY_MEALS.map( ( meal ) => (
         <MealItem
-            key={ mealsID }
+            key={ meal.id }
+            id={ meal.id }
             name={ meal.name }
             description={ meal.description }
             price={ meal.price }

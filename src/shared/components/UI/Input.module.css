@@ -16,3 +16,9 @@
   font: inherit;
   padding-left: 0.5rem;
 }
+input:in-range {
+  border: 2px solid green;
+}
+input:out-of-range {
+  border: 2px solid red;
+}

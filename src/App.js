@@ -1,8 +1,9 @@
 import './App.css'
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Header from "./shared/components/layout/Header";
 import Meals from "./shared/components/meals/Meals";
 import Cart from './shared/components/cart/Cart';
+import CartProvider from './shared/context/CartProvider';
 import { Scrollbar } from 'smooth-scrollbar-react';
 
 
@@ -25,13 +26,13 @@ function App () {
                 },
             } }>
             <div className='list-data'>
-                <Fragment>
+                <CartProvider>
                     { cartIsShown && <Cart onClose={ hideCartHandler } /> }
                     <Header onShowCart={ showCartHandler } />
                     <main>
                         <Meals />
                     </main>
-                </Fragment>
+                </CartProvider>
             </div>
         </Scrollbar>
     );

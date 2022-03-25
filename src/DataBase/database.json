@@ -1,30 +1,26 @@
 [
     {
         "id": "m1",
-        "foodID": 0,
         "name": "Sushi",
-        "description": "First fish and veggies",
-        "price": 22.98
+        "description": "Finest fish and veggies",
+        "price": 22.99
     },
     {
         "id": "m2",
-        "foodID": 1,
-        "name": "Kebab",
-        "description": "Sheep backen",
-        "price": 22.98
+        "name": "Schnitzel",
+        "description": "A german specialty!",
+        "price": 16.5
     },
     {
         "id": "m3",
-        "foodID": 2,
-        "name": "Bifstraganof",
-        "description": "First fish and veggies",
-        "price": 22.98
+        "name": "Barbecue Burger",
+        "description": "American, raw, meaty",
+        "price": 12.99
     },
     {
         "id": "m4",
-        "foodID": 3,
-        "name": "Salad",
-        "description": "First fish and veggies",
-        "price": 22.98
+        "name": "Green Bowl",
+        "description": "Healthy...and green...",
+        "price": 18.99
     }
 ]
